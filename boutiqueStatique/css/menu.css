@@ -1,0 +1,72 @@
+#menuPrincipal {
+    background-color: #424558;
+}
+#menuPrincipal, 
+#menuPrincipal ul {
+    list-style-type: none ; 
+    margin: 0px;
+    padding: 0px;
+}
+#menuPrincipal ul {
+    display: none ;
+}
+#menuPrincipal li {
+   
+    display: inline-block ;
+    position:   relative;
+}
+#menuPrincipal a {
+    font-size: 1.3em;
+    text-decoration: none;
+    display: block ;
+    width: 100px;
+    height: 55px;
+    line-height:50px; 
+    padding: 3px 10px;    
+    text-align: center;
+}
+#menuPrincipal li:hover ul {
+    /* Affichage du soumenu au survol */
+    display: block ;
+    
+    /* Positionnement du sous-menu */
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    z-index: 100; /* Gestion de la superposition des sous-menus par rapport au reste de la page */
+}
+#menuPrincipal ul a {
+    display: block;
+}
+
+/* Gestion des couleurs */
+#menuPrincipal li {
+   background-color: #424558;
+}
+#menuPrincipal li a {
+    color: #ccc; 
+}
+#menuPrincipal li:hover {
+    border-top: 5px solid #e44d26;
+    background-color: rgba(220, 0, 51, 0.15);
+
+}
+#menuPrincipal li:focus a {
+    border-top: 5px solid #e44d26;
+    background-color: rgba(228, 77, 38, 0.15);
+}
+#menuPrincipal li:hover a {
+    color: #fff;
+}
+#menuPrincipal ul li {
+    background-color: #424558; 
+    border-top: 1px solid #ccc;
+}
+#menuPrincipal ul li:hover {
+   background-color: #424558;
+}
+#menuPrincipal ul li a {
+    color: #666;
+}
+#menuPrincipal ul li:hover a {
+  background-color: rgb(210, 77, 60);
